@@ -4,7 +4,7 @@
     <title>Investment Management, Online Financial Advisor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/css/bootstrap-slider.min.css"> -->
-    <link rel="stylesheet" href="/styles/reg.css?{!! $ASSETS_REV !!}">
+    <link rel="stylesheet" href="/styles/reg.css">
     <link rel="stylesheet" href="/styles/main.min.css">
     <link rel="stylesheet" href="/styles/simba.css?{!! $ASSETS_REV !!}">
 </head>
