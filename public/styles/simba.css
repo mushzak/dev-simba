@@ -1,0 +1,502 @@
+/*
+    Helpers
+ */
+.abscenter { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.tcenter { text-align: center; }
+
+/*
+    Extra controls
+ */
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url(../img/glyphicons-halflings.png);
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+div.spinedit {
+    display: inline-block;
+    position: relative
+}
+
+input[type="text"].spinedit {
+    width: 35px
+}
+
+div.spinedit .icon-chevron-up, div.spinedit .icon-chevron-down {
+    position: relative;
+    cursor: pointer;
+    width: 12px;
+    left: 8px
+}
+
+div.spinedit .icon-chevron-up {
+    top: -12px
+}
+
+div.spinedit .icon-chevron-down {
+    top: 3px;
+    left: -4px
+}
+
+.form-search div.spinedit, .form-inline div.spinedit, .form-horizontal div.spinedit {
+    top: 5px
+}
+.icon-chevron-up {
+    background-position: -288px -120px;
+}
+.icon-chevron-down {
+    background-position: -313px -119px;
+}
+/*
+    Performance chart
+ */
+#perf-chart {
+    height: 523px;
+}
+#perf-chart .highcharts-tooltip table {
+    font-size: 11px;
+    width: 337px !important;
+    border: 1px solid #666;
+    border-radius: 8px;
+}
+#perf-chart .highcharts-tooltip tr {
+    height: 30px;
+}
+#perf-chart .highcharts-tooltip td,
+#perf-chart .highcharts-tooltip th {
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+#perf-chart .highcharts-tooltip tbody tr:nth-child(odd) td {
+    background-color: #292b33;
+}
+#perf-chart .highcharts-tooltip td:nth-child(1) { width: 12em; }
+#perf-chart .highcharts-tooltip td:nth-child(3) { text-align: right; width: 7em; }
+
+#perf-chart .highcharts-tooltip th { font-size: 14px; text-transform: uppercase; }
+#perf-chart .highcharts-tooltip tfoot td { color: #000; background-color: #ffdb4d; }
+#perf-chart .highcharts-tooltip tfoot td:first-child { background-color: #fff; }
+/*
+    Calculator
+ */
+.fees-wrapper {
+    width: 350px;
+}
+.card-front {
+    background-color: #000;
+    border-radius: 8px;
+}
+.fees-headline,
+.fees-description,
+.calculator-control-heading,
+.calculator-slider {
+    color: #fff;
+    padding: 0 15px;
+}
+.fees-disclosure-control {
+    display: inline-block;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    background: transparent;
+    line-height: 14px;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.fees-disclosure-control,
+.calculator-control-value {
+    color: #dfab3b;
+}
+.fees-headline {
+    position: relative;
+    padding: 15px 15px 10px 70px;
+}
+.fees-icon {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 14px;
+    left: 14px;
+    z-index: 1;
+    background-size: 45px 45px;
+    background-image: url("../img/fees-accent.png");
+}
+.calculator-value,
+.calculator-heading {
+    background: #f2f7f7;
+    padding: 0 15px;
+}
+.calculator-heading,
+.calculator-control-heading {
+    padding: 10px 15px;
+    border-bottom: 2px solid #000;
+    font-size: 14px;
+    line-height: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.calculator-value {
+    line-height: 82px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 66px;
+    letter-spacing: -0.05em;
+}
+.calculator-slider {
+    padding-bottom: 15px;
+}
+.fees-header {
+    font-style: italic;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    margin: 0 0 4px 0;
+}
+#BC {
+    width: 100%
+}
+#BC .slider-track {
+    background: #e3e3e3;
+    height: 12px;
+}
+#BC .slider-selection {
+    background: #e1ab3a;
+}
+#BC .slider-handle {
+    background: #997528;
+    width: 12px;
+    height: 12px;
+    margin: 0 0 0 -5px;
+}
+
+/*
+    Questionnaire
+ */
+
+.min-header {
+    width: 100%;
+    height: 60px;
+    z-index: 11;
+    background-color: #3c3f45;
+    position: fixed;
+    top: 0;
+    color: #ffffff;
+    -webkit-box-shadow: 0 2px 4px rgba(30, 30, 30, 0.5);
+    box-shadow: 0 2px 4px rgba(30, 30, 30, 0.5)
+}
+.min-header-pad {
+    height: 64px;
+}
+.min-header .main-nav__item {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    margin-right: 40px;
+}
+
+.wrapper { max-width: 1070px; margin: 0 auto; }
+
+#questionnaire { max-width: 700px; margin: 0 auto 2em; }
+.form-tearline { font-size: 16px; color: #9b9b9b; margin-bottom: 20px; }
+#questionnaire fieldset { min-height: 306px; }
+#questionnaire legend {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    margin: 22px 0;
+    font-weight: 400 !important;
+}
+#questionnaire .tearline {
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+}
+#questionnaire label {
+    font-size: 16px;
+    font-weight: 400 !important;
+}
+.spacing { margin-bottom: 24px; }
+.commands { padding: 20px 0; }
+.prev { float:left;}
+.next { float:right;}
+
+.btn-primary { background-color: #f0ad4e; border-color: #eea236; }
+.btn-primary:hover { background-color: #ec971f; border-color: #d58512; }
+.btn-primary:active:focus, .btn-primary:active, .btn-primary:focus { background-color: #d58512; border-color: #985f0d; }
+
+#questionnaire input[type="radio"],
+#questionnaire input[type="checkbox"] {
+    margin-right: 6px;width: 13px;
+    height: 13px;
+}
+.questionnaire-confirmation,
+.questionnaire-description {
+    padding: 35px 0 0 22px;
+    margin-top: -30px;
+    color: #9b9b9b;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+.questionnaire-confirmation {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+/*    transition: visibility 0s, opacity .2s linear, height .2s ease-in-out; */
+    transition: height .2s ease-in-out;
+}
+input:checked ~ .questionnaire-confirmation { visibility: visible; opacity: 1; height: auto;}
+
+#questionnaire input:checked ~ label,
+#questionnaire input:checked ~ .questionnaire-confirmation,
+#questionnaire input:checked ~ .questionnaire-description { background-color: #f3f7f8;}
+
+.questionnaire-error {
+    color: #e0314f;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.questionnaire-hide { display: none; }
+
+#progress {
+    position: relative;
+    height: 5px;
+    background-color: #f2f7f7;
+    margin-bottom: 20px;
+}
+#progress-complete {
+    border: 0;
+    position: absolute;
+    top: 0;
+    height: 5px;
+    left: 0;
+    min-width: 10px;
+    background-color: #f90;
+    transition: width .2s ease-in-out;
+}
+
+/*
+    Plan
+ */
+
+/* Suppress start flickering */
+#plan fieldset:not(:first-child) { display: none; }
+
+/* Hide "Next" button in plan wizard */
+#plan .next, #plan .prev {
+    display: none;
+}
+
+#askEmail label {
+    font-weight: 300;
+}
+#plan p {
+    margin-bottom: 1em;
+    text-align: left;
+    font-size: 14px;
+}
+/* Show loading animation on first frame */
+#plan-1 legend {
+    text-align: center; padding-top: 7em;
+    border: 0;
+    background-image: url('/img/loading-orange-img.gif');
+    background-repeat: no-repeat;
+    background-position: center 40%;
+}
+#plan-bar-chart {
+    width: 100%;
+    max-width: 1070px;
+    height: 320px;
+    margin: 1em 0;
+}
+.category-descr {
+    display: none;
+    padding: 0;
+    margin: -1em 0 1em;
+    background-color: #eee;
+}
+.category-descr ul {
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+}
+.category-descr li {
+    margin: 0;
+    padding: 0;
+}
+.category-descr p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 2rem;
+    font-weight: 300;
+}
+.category-descr h5 {
+    font-size: 14px;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.category-descr > .row > div { padding: 26px 40px; }
+
+#plan-3 .main {
+    margin-bottom: 1em;
+}
+.detailed-main {
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+
+#detailed-gauge-chart { width: 240px; height: 150px; max-width: 100%; }
+#plan-pie-chart { width: 153px; height: 153px; max-width: 100%; }
+
+#assets-table i {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#plan ul {
+    list-style-position: inside;
+    padding: 0;
+    -webkit-padding-start: 0;
+}
+
+#bottom-tabs { padding: 0 1em; }
+
+#bottom-tabs .tab-pane { padding: 1em; }
+.fee-details h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+.fee-details .fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+.fee-details .fee-table td {
+    padding: 2px 0;
+    text-align: right;
+}
+.fee-details .fee-table td:first-child {
+    text-align: left;
+}
+.fee-details .dot-legend-w {
+    position: relative;
+}
+.fee-details .dot-legend-w:before {
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    position: absolute;
+    white-space: nowrap;
+    color: #787865;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.fee-details .dot-legend-r {
+    background: white;
+    padding-left: 6px;
+    position: relative;
+}
+.fee-details #cost-leader {
+    border-style: solid;
+    border-width: 6px 30px 12px 4px;
+    border-color: transparent #eee transparent transparent;
+    position: absolute;
+    top: 40px;
+    left: -16px;
+}
+.fee-comparison .inner {
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+span.line {
+    display: inline-block;
+    margin: 0 .5em 0 1em;
+    height: 5px;
+    width: 20px;
+    border-top-style: solid;
+    border-top-width: 2px;
+}
+
+.investnow-subheader {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+.investnow-subheader .breadcrumb {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 8px 0;
+    background-color: #f5f5f5;
+    color: #777;
+}
+.investnow-subheader .breadcrumb>.active {
+    color: #333;
+    font-weight: 500;
+}
+.investnow-subheader .breadcrumb>li+li:before {
+    content: ">\00a0";
+}
+
+/*
+    Tips
+ */
+legend .text-info { font-size: 12px; }
+.under-input-a { margin-top: 10px; }
+body.questionnaire-and-plan .popover {
+    max-width: 400px;
+}
+body.questionnaire-and-plan .popover-content {
+    font-weight: normal;
+    line-height: 1.3em;
+    font-size: 9pt;
+}
+body.questionnaire-and-plan .popover-content h5 {
+    font-weight: 700;
+}
+body.questionnaire-and-plan .popover-content ul {
+    list-style-position: inside;
+    padding: 0;
+    -webkit-padding-start: 0;
+}
+#assets-table .tip {
+    border-bottom: 2px dotted #BBB;
+}
+
+#projection-chart {
+    max-width: 600px;
+    width: 100%;
+    height: 300px;
+}
+#slider-control {
+    display: block;
+    width: auto;
+    max-width: 530px; /* comply with projection-chart limited width xaxis */
+    margin: -15px 55px 0 13px;
+}
+#slider-control .slider-selection,
+#slider-control .slider-track-high { opacity: 0; }
+#slider-control .slider-track,
+#slider-control .slider-tick {
+    background: #eee;
+    opacity: 1;
+}
+#slider-control .slider-handle {
+    background: #AAA;
+}
+
+
